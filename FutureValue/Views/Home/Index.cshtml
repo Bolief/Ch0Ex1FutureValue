@@ -1,0 +1,19 @@
+﻿@model FutureValueModel
+@{
+    ViewBag.Title = "Future Value Calculator";
+}
+
+<!--
+    Author: Francis Bolie
+    Date: september 8/2024
+-->
+
+<h1>Future Value Calculator</h1>
+<form asp-action="Index" method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="MonthlyInvestment">Monthly Investment:</label>
+        <input asp-for="MonthlyInvestment" />
+    </div>
+   <!-- rest of input form goes here-->
+</form>
